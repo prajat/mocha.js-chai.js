@@ -1,5 +1,5 @@
 # mocha.js-chai.js
-normal javascript testing using mocha(Test runner) and chai(Assertion Library).
+normal Javascript Unit Testing using mocha(Test runner) and chai(Assertion Library).
 
 --INSTALL DEPENDENCIES
 <br />
