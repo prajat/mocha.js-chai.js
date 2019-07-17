@@ -1,9 +1,12 @@
 const assert = require('chai').assert;
 const expect = require('chai').expect;
 
+const app = require('../app');
+
 //const sayHello = require('../app').sayHello;
 //const addNumbers = require('../app').addNumbers;
-const app = require('../app');
+
+//var assert=chai.assert;   for browser
 
 // Results
 sayHelloResult = app.sayHello();
