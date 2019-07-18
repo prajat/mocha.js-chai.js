@@ -43,4 +43,14 @@ describe('App', function () {
 
 
   });
+  describe('user async func',function(){
+    it('should return true if valid user id',function(done){
+      app.isValidUserIdAsync(['rajat','shankar'],'shankar',function(isValid){
+        assert.equal(isValid,true);
+        done();
+      });
+      
+    })
+
+  });
 });

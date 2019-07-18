@@ -15,6 +15,13 @@ module.exports = {
     }
     return num1+num2;
 
+  },
+  isValidUserIdAsync: function(userlist,user,callback){
+    setTimeout(function(){                    //settimeout is used to simulate the async behaviour
+      callback(userlist.indexOf(user)>=0)
+
+    },1);
+
   }
 
 }
