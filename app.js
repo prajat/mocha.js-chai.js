@@ -20,7 +20,7 @@ module.exports = {
     setTimeout(function(){                    //settimeout is used to simulate the async behaviour
       callback(userlist.indexOf(user)>=0)
 
-    },1);
+    },1900);
 
   }
 

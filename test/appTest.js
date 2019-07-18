@@ -36,21 +36,25 @@ describe('App', function () {
       assert.typeOf(addNumbersResult, 'number');
     });
   });
-  describe('add', function () {
+  describe('user async func',function(){
+
+
     it('result should be 4', function () {
       expect(app.add(2, 2)).to.equal(4);
     });
-
-
-  });
-  describe('user async func',function(){
-    it('should return true if valid user id',function(done){
+    it('should return true if valid user id',function(done){        //mocha feature 
       app.isValidUserIdAsync(['rajat','shankar'],'shankar',function(isValid){
         assert.equal(isValid,true);
         done();
+        
+         
       });
+      
+
       
     })
 
   });
+ 
+  
 });
