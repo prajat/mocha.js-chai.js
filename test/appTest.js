@@ -42,10 +42,11 @@ describe('App', function () {
     it('result should be 4', function () {
       expect(app.add(2, 2)).to.equal(4);
     });
-    it.only('should return true if valid user id', function (done) { //mocha feature 
-      app.isValidUserIdAsync(['rajat', 'shankar'], 'shankar', function (isValid) {
+    it.only('should return true if valid user id', function () { //mocha feature 
+      app.isValidUserIdAsync(['rajat', 'shankar'], 'shank', function (isValid) {
         assert.equal(isValid, true);
-        done();
+        
+        
 
 
       });
